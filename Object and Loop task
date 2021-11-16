@@ -98,6 +98,99 @@ for(var i = 0; i < numsArr.length; i++){
  }
 }
    console.log(arr);
+(5) Write a code to replace the array value — If the index is even, replace it with ‘even’.
 
+Output: [ “even”, 2, “even”, 4, “even”, 6, “even”, 8, “even”, 10, … ]
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+let arr=[];
+
+for (var i = 0; i < numsArr.length; i++) 
+{
+ if(numsArr[i] % 2 !== 0 )
+ {
+ numsArr[i] = "even";
+ }
+ arr.push(numsArr[i]);
+}
+console.log(arr);
+
+
+
+(6) Write a code to add all the numbers in the array
+Output: 66
+
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+ var sum=0;
+ 
+for (var i = 0; i <numsArr.length; i++) {
+
+ sum += numsArr[i] ;
+ 
+}
+console.log(sum);
+
+
+(7) Write a code to add the even numbers only
+
+Output: 30
+
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+var sum=0;
+
+for (var i = 0; i <numsArr.length; i++) {
+    
+ if(numsArr[i]%2===0)
+     
+     sum += numsArr[i];
+ 
+}
+console.log(sum);
+
+
+(8) Write a code to add the even numbers and subract the odd numbers
+
+Output: 94
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+var sum=100;
+
+for (var i = 0; i < numsArr.length; i++) 
+{
+ if(numsArr[i]%2 !== 0)
+ {
+ sum -= numsArr[i];
+ }
+ else
+ {
+ sum += numsArr[i];
+ }
+}
+console.log(sum);
+
+
+
+(9) Write a code to print inner arrays
+
+Output:
+
+Array(5) [ 1, 2, 3, 4, 5 ]
+
+Array(6) [ 6, 7, 8, 9, 10, 11 ]
+
+
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+
+
+for (var i = 0; i < numsArr.length; i++) 
+{
+ console.log( numsArr[i]);
+}
 
        
