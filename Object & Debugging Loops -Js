@@ -244,22 +244,17 @@ Output:
 30
 
 var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
-let arr = [];
 var sum_odd=0;
 var sum_even=0;
 for (var i = 0; i < numsArr.length; i++) {
  for(var j = 0 ; j < numsArr[i].length;j++ ){
-      arr.push(numsArr[i][j]);
- } 
-}
- for(var k = 0; k < arr.length; k++){
- if(arr[k] % 2 === 0)
+ if(arr[i][j] % 2 === 0)
  {
- sum_even += arr[k];
+ sum_even += arr[i][j];
  }
  else 
  {
- sum_odd += arr[k];
+ sum_odd += arr[i][j];
  }
 }
 
